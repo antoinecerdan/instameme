@@ -1,0 +1,247 @@
+/* INDEX PAGE AND HEADER */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 7px;
+
+}
+
+
+#search {
+    display: flex;
+    justify-content: center;
+}
+
+#home {
+    padding-left: 10px;
+}
+
+#profile,
+#post {
+    margin-right: 10px;
+}
+
+#navbar-left {
+    width: 25%;
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+#navbar-right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    flex-direction: row-reverse;
+
+}
+
+#logo {
+    width: 200px;
+    margin-right: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+/* MEME CARD */
+
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 2.5%;
+    background-color: rgba(223, 160, 11, 0.7);
+    perspective: 1000px;
+
+}
+
+.card * {
+    opacity: 0;
+}
+
+.card-back {
+    position: absolute;
+    top: 25%;
+
+}
+
+.unflipped {
+    transform: rotateY(180deg);
+}
+
+.unflipped:hover {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+
+.card:hover * {
+    opacity: 1;
+}
+
+.flipped * {
+    opacity: 1;
+}
+
+.username {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.like {
+    color: red;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2px solid red;
+    padding: 4px;
+}
+
+.like:hover {
+    background-color: red;
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.repost a {
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2px solid black;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.repost a:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+
+.meme {
+    padding: 4px;
+    width: 90%;
+    margin-left: 12px;
+}
+
+.comments {
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.comments li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.commentinput {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #eee;
+    border-color: rgba(223, 160, 11, 0.7);
+    margin-bottom: 3px;
+
+}
+
+.commentbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.commentbutton {
+    margin-bottom: 1px;
+}
+
+.commentbar:focus {
+    outline: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-bottom {
+    padding: 5px;
+}
+
+
+
+/* MEME PAGE */
+.meme-big {
+    background-color: rgba(223, 160, 11, 0.7);
+    display: flex;
+    flex-direction: row;
+}
+
+.meme-big-left {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.meme-big-right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* POST */
+
+#new-post {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#post-top {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(223, 160, 11, 0.7);
+}
+
+#upload {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 15px;
+    justify-content: center;
+}
