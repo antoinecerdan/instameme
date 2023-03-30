@@ -1,2 +1,2 @@
-# instameme2
+# instameme
 Instameme but interactive
