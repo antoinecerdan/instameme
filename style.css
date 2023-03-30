@@ -25,7 +25,8 @@ header {
 }
 
 #profile,
-#post {
+#post,
+#logout {
     margin-right: 10px;
 }
 
@@ -122,15 +123,28 @@ a:hover {
     margin-left: 10px;
 }
 
-.like {
+.like a {
     color: red;
     font-weight: bold;
     border-radius: 100px;
     border: 2px solid red;
     padding: 4px;
+    text-decoration: none;
 }
 
-.like:hover {
+.liked a {
+    background-color: red;
+    border: 2px solid red;
+    padding: 4px;
+    border-radius: 100px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.like a:hover,
+.liked a:hover {
     background-color: red;
     color: white;
     transition: all 0.4s;
@@ -220,6 +234,7 @@ a:hover {
 .meme-big-right {
     display: flex;
     flex-direction: column;
+    width: 200px;
 }
 
 /* POST */
@@ -245,3 +260,5 @@ a:hover {
     margin-top: 15px;
     justify-content: center;
 }
+
+/* SIGN IN AND SIGN UP */
